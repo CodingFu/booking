@@ -10,6 +10,10 @@ $ ->
       $calendar.fullCalendar('renderEvent', eventData, true)
     $calendar.fullCalendar('unselect')
 
+  onEventClick = (calEvent, e, view) ->
+    alert('Event clicked!')
+    false
+
   $calendar = $('#fullcalendar')
   $calendar.fullCalendar
     header: {}
@@ -19,6 +23,7 @@ $ ->
     selectable: true
     selectHelper: true
     editable: true
-    select: onSelect
     events: '/events.json'
+    select: onSelect
+    eventClick: onEventClick
 
