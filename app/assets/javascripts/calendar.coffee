@@ -1,5 +1,8 @@
 
 $ ->
+  $calendar = $('#fullcalendar')
+  h = $(window).innerHeight() - 50
+
   onSelect = (start, end) ->
     title = prompt('Event title')
     if title
@@ -14,8 +17,8 @@ $ ->
     alert('Event clicked!')
     false
 
-  $calendar = $('#fullcalendar')
   $calendar.fullCalendar
+    height: h
     header: {}
     allDaySlot: false
     firstDay: 1
@@ -27,4 +30,5 @@ $ ->
     events: '/events.json'
     select: onSelect
     eventClick: onEventClick
+
 
