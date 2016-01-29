@@ -17,8 +17,9 @@ $ ->
   $calendar = $('#fullcalendar')
   $calendar.fullCalendar
     header: {}
+    allDaySlot: false
     firstDay: 1
-    slotDuration: '00:15:00'
+    snapDuration: '00:15:00'
     defaultView: 'agendaDay'
     selectable: true
     selectHelper: true
