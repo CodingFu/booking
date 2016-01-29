@@ -19,4 +19,5 @@ $ ->
     selectHelper: true
     editable: true
     select: onSelect
+    events: '/events.json'
 
