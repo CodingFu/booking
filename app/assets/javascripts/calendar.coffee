@@ -38,10 +38,10 @@ $ ->
     false
 
   $calendar.fullCalendar
+    lang: "ru"
     height: h
     header: {}
     allDaySlot: false
-    firstDay: 1
     snapDuration: '00:15:00'
     defaultView: 'agendaDay'
     selectable: true

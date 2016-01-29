@@ -15,4 +15,5 @@
 //= require moment
 //= require twitter/bootstrap
 //= require fullcalendar
+//= require fullcalendar/lang-all
 //= require_tree .
